@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: darkolivegreen;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.form1-box {
+    width: 335px;
+    height: 527px;
+    margin: 40px 0;
+    padding: 16px;
+    color: white;
+}
+
+.form1-box h2 {
+    font-weight: bold;
+    margin: 10px;
+}
+
+.form1-box p {
+    line-height: 25px;
+    margin: 10px;
+    font-size: 12px;
+}
+
+.form-box {
+    box-shadow: -20px 20px 4px rgb(65, 83, 33);
+    width: 335px;
+    height: 514px;
+    margin: 55px 0;
+    padding: 16px;
+    background-color: white;
+}
+
+.form-box h1 {
+    margin: 20px 90px 20px 90px;
+    font-size: 15px;
+    color: rgb(122, 117, 117);
+    font-weight: 500;
+}
+
+.mid-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.label {
+    margin: 6px;
+}
+
+.name {
+    padding: 6px;
+    margin: 6px;
+    width: 138px;
+}
+
+#Name::after {
+    content: "*";
+    color: black;
+}
+
+.mail .email {
+    padding: 6px;
+    margin: 7px;
+    width: 303px;
+}
+
+.mail {
+    margin-top: 17px;
+}
+
+select#choose {
+    padding: 6px;
+    margin: 6px;
+    width: 138px;
+}
+
+#Address {
+    padding: 10px;
+    margin: 9px;
+    width: 297px;
+}
+
+input.check-box {
+    margin: 6px;
+}
+
+.submit-btn {
+    background-color: #9eaf43;
+    width: 100%;
+    padding: 10px 30px;
+    margin: 5px auto 0 auto;
+    display: block;
+    border-radius: 2px;
+    outline: none;
+    border: 0px;
+    cursor: pointer;
+    color: white;
+}
+
+/* #choose::after {
+    content:"*";
+    color: black;
+    width: 12px;
+    height: 12px;
+    border-top: 0;
+    border-bottom: 12px;
+    color: red;
+    padding: 5px;
+  }
+#choose:after{
+    width: 12px;
+    height: 12px;
+    border-top: 0;
+    border-bottom: 12px;
+    color: red;
+} */
+select#choose::after {
+    margin: 3px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid #555;
+}
+
+select#choose::after {
+    margin: 3px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid #555;
+}
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        display: block;
+    }
+    .form1-box {
+        width: 335px;
+        height: 427px;
+        margin: 20px 0;
+        padding: 10px;
+        color: white;
+    }
+    
+    .form-box {
+        box-shadow: -20px 20px 4px rgb(65, 83, 33);
+        width: 328px;
+        height: 514px;
+        margin: 30px 7px;
+        padding: 9px;
+        background-color: white;
+    }
+}
